@@ -1,0 +1,22 @@
+{{#if signin}}
+  <div class="signform">
+    <form action="/auth/signin" method="POST"> 
+        <h1>Welcome back!<h1>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button onclick="window.location.href='/profile'" type="submit">Sign In</button>
+    </form>
+  </div>
+{{/if}}
+{{#if signup}}
+  <div class="signform">
+    <form action="/auth/signup" method="POST"> 
+        <h1>Welcome!<h1>
+        <input type="text" name="first_name", id="first_name" placeholder="First name" required>
+        <input type="text" name="last_name", id="last_name" placeholder="Last name" required>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button type="submit" onclick="window.location.href='/profile'">Sign Up</button>
+    </form>
+  </div>
+{{/if}}
