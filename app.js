@@ -15,7 +15,7 @@ const server = http.createServer(app);
 const partialsDir = "./views/partials";
 const layoutsDir = "./views/layouts";
 
-const port = process.nextTick.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 app.set("view engine", "hbs");
 app.engine(
